@@ -1,0 +1,13 @@
+# print a walcome statement
+print("Welcome to the tip calculator.")
+# we ask for the total bill
+bill = float(input("What was the total bill? $"))
+# we ask for the percentage tip (10,12 or 15)
+tip = float(input("What percentage tip would you like to give? 10, 12 or 15? %"))
+percentage_tip = tip/100
+# let´s ask if the user want to split the bill?
+split = int(input("How many people to split the bill? "))
+# So, the total (rounded two decimals) is:
+total = round((bill + (bill*percentage_tip)) / split, 2)
+# Let's print the result
+print(f"Each person should pay: ${total}")
